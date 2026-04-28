@@ -30,13 +30,11 @@ body {
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 75px;
-    letter-spacing: 4px;
+    font-size: 70px;
 }
 
 .hero p {
     margin: 20px 0;
-    font-size: 18px;
     opacity: 0.8;
 }
 
@@ -47,7 +45,7 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 14px 32px;
+    padding: 14px 28px;
     margin: 5px;
     text-decoration: none;
     transition: 0.3s;
@@ -74,7 +72,7 @@ body {
     color: #c9a96e;
 }
 
-/* CONTAINERS */
+/* SECTIONS */
 .container {
     max-width: 1000px;
     margin: auto;
@@ -88,7 +86,6 @@ h2 {
     margin-bottom: 25px;
 }
 
-/* PROBLEM */
 .problem p {
     margin: 10px 0;
     opacity: 0.8;
@@ -100,12 +97,7 @@ h2 {
     font-weight: bold;
 }
 
-/* ABOUT */
-.about p {
-    margin: 10px 0;
-}
-
-/* ADVANTAGES */
+/* GRID */
 .grid {
     display: flex;
     gap: 30px;
@@ -130,11 +122,6 @@ h2 {
     width: 200px;
 }
 
-/* CATALOG */
-.catalog {
-    background: #0f0f0f;
-}
-
 /* CTA */
 .cta {
     background: #111;
@@ -148,15 +135,37 @@ footer {
     opacity: 0.8;
 }
 
+/* FIX BUTTON */
+.fixed-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.fixed-btn {
+    background: #c9a96e;
+    color: #000;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
 /* MOBILE */
 @media(max-width:768px){
     .hero h1 {
-        font-size: 42px;
+        font-size: 40px;
     }
 
 .price-grid {
     flex-direction: column;
     align-items: center;
 }
-}
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+}
