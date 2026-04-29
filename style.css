@@ -9,15 +9,16 @@ body {
 .hero {
     height: 100vh;
     background:
-        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-        url("IMG_1486.png") center/cover no-repeat;
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+        url("IMG_1486.png") center center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .overlay {
-    text-align: center;
+    padding: 40px;
 }
 
 h1 {
@@ -70,3 +71,43 @@ p {
     padding: 20px;
 }
 
+/* ===== МОБИЛЬНАЯ АДАПТАЦИЯ ===== */
+@media (max-width: 768px) {
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.overlay {
+    padding: 20px;
+}
+
+.btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.price-box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 80%;
+}
+
+.about, .prices, .cta {
+    padding: 30px 10px;
+}
+
+iframe {
+    height: 400px;
+}
+}
